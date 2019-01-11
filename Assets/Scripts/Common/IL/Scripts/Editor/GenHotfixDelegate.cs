@@ -331,13 +331,13 @@ namespace IL
 }}
 ";
 
-        [MenuItem("IL/注册需要热更的类")]
+        //[MenuItem("IL/注册需要热更的类")]
         static void Gen()
         {
             AutoCode(GenAutoExport.FixMarkIL());
         }
 
-        [MenuItem("IL/清除需要热更的类",false,22)]
+        //[MenuItem("IL/清除需要热更的类",false,22)]
         static void Clear()
         {
             AutoCode(new List<string>());
