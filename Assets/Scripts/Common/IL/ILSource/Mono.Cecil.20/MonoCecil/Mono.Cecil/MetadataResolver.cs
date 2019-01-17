@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // MetadataResolver.cs
 //
 // Author:
@@ -368,4 +368,3 @@ namespace Mono.Cecil
         }
     }
 }
-#endif

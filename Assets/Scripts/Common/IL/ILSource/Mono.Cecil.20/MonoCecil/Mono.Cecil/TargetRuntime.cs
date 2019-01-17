@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // TargetRuntime.cs
 //
 // Author:
@@ -35,4 +35,3 @@ namespace Mono.Cecil {
 		Net_4_0,
 	}
 }
-#endif

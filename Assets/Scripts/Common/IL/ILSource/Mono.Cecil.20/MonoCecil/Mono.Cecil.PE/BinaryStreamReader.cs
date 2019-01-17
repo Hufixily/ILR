@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // BinaryStreamReader.cs
 //
 // Author:
@@ -49,4 +49,3 @@ namespace Mono.Cecil.PE {
 		}
 	}
 }
-#endif

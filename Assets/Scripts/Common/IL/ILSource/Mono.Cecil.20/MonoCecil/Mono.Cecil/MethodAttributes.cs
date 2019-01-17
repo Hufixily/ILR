@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // MethodAttributes.cs
 //
 // Author:
@@ -64,4 +64,3 @@ namespace Mono.Cecil {
 		RequireSecObject	= 0x8000	 // Method calls another method containing security code
 	}
 }
-#endif

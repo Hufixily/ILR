@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // DataDirectory.cs
 //
 // Author:
@@ -48,4 +48,3 @@ namespace Mono.Cecil.PE {
 		}
 	}
 }
-#endif

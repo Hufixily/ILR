@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // Row.cs
 //
 // Author:
@@ -173,4 +173,3 @@ namespace Mono.Cecil.Metadata {
 		}
 	}
 }
-#endif

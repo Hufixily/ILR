@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // EventAttributes.cs
 //
 // Author:
@@ -37,4 +37,3 @@ namespace Mono.Cecil {
 		RTSpecialName	= 0x0400	 // CLI provides 'special' behavior, depending upon the name of the event
 	}
 }
-#endif

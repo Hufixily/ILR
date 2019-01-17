@@ -1,4 +1,4 @@
-#if USE_PDB//
+//
 // PdbHelper.cs
 //
 // Author:
@@ -210,4 +210,3 @@ namespace Mono.Cecil.Pdb
     }
 }
 
-#endif

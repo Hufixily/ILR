@@ -1,4 +1,4 @@
-#if USE_PDB//-----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
 //
 // Copyright (C) Microsoft Corporation.  All Rights Reserved.
 //
@@ -30,4 +30,4 @@ namespace Microsoft.Cci {
     }
     uint length;
   }
-}#endif
+}

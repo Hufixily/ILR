@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // MethodBody.cs
 //
 // Author:
@@ -33,6 +33,7 @@ using Mono.Collections.Generic;
 
 namespace Mono.Cecil.Cil
 {
+
     public sealed class MethodBody : IVariableDefinitionProvider
     {
 
@@ -264,4 +265,3 @@ namespace Mono.Cecil.Cil
         }
     }
 }
-#endif

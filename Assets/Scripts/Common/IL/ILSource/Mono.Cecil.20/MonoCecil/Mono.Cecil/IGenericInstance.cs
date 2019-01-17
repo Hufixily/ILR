@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // IGenericInstance.cs
 //
 // Author:
@@ -64,4 +64,3 @@ namespace Mono.Cecil {
 		}
 	}
 }
-#endif

@@ -1,5 +1,4 @@
-﻿#if USE_HOT
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -333,7 +332,8 @@ namespace ILRuntime.CLR.Method
                 {
                     case ObjectTypes.StackObjectReference:
                         {
-                            var dst = *(StackObject**)&p->Value;
+                            var addr = *(long*)&p->Value;
+                            var dst = (StackObject*)addr;
                             if (dst->ObjectType >= ObjectTypes.Object)
                             {
                                 var obj = val;
@@ -413,5 +413,3 @@ namespace ILRuntime.CLR.Method
         }
     }
 }
-
-#endif

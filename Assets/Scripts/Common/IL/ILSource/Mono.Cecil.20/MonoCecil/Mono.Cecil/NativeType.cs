@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // NativeType.cs
 //
 // Author:
@@ -71,4 +71,3 @@ namespace Mono.Cecil {
 		Max = 0x50
 	}
 }
-#endif

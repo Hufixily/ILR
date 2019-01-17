@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // SecurityDeclaration.cs
 //
 // Author:
@@ -208,4 +208,3 @@ namespace Mono.Cecil
         }
     }
 }
-#endif

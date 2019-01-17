@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // PInvokeInfo.cs
 //
 // Author:
@@ -136,4 +136,3 @@ namespace Mono.Cecil {
 		}
 	}
 }
-#endif

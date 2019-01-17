@@ -1,4 +1,4 @@
-#if USE_HOTusing System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 
 namespace ILRuntime.Other
@@ -16,4 +16,3 @@ namespace ILRuntime.Other
         }
     }
 }
-#endif

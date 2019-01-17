@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // Image.cs
 //
 // Author:
@@ -164,4 +164,3 @@ namespace Mono.Cecil.PE
         }
     }
 }
-#endif

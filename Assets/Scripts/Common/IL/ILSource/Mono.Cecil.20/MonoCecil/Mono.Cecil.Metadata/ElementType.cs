@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // ElementType.cs
 //
 // Author:
@@ -71,4 +71,3 @@ namespace Mono.Cecil.Metadata {
 		Enum = 0x55
 	}
 }
-#endif

@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // ModuleDefinition.cs
 //
 // Author:
@@ -753,4 +753,3 @@ namespace Mono.Cecil
         }
     }
 }
-#endif

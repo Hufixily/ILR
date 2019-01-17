@@ -1,4 +1,4 @@
-#if USE_HOTusing System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,4 +11,3 @@ namespace ILRuntime.Runtime.Debugger.Protocol
         public KeyValuePair<int, StackFrameInfo[]>[] StackFrame { get; set; }
     }
 }
-#endif

@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // Symbols.cs
 //
 // Author:
@@ -241,4 +241,3 @@ namespace Mono.Cecil.Cil {
 	}
 
 }
-#endif

@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // Actions.cs
 //
 // Author:
@@ -36,4 +36,3 @@ namespace Mono {
 }
 
 #endif
-#endif

@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // MethodCallingConvention.cs
 //
 // Author:
@@ -38,4 +38,3 @@ namespace Mono.Cecil {
 		Generic		= 0x10,
 	}
 }
-#endif

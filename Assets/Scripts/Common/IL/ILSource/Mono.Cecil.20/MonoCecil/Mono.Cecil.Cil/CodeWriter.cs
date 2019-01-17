@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // CodeWriter.cs
 //
 // Author:
@@ -36,4 +36,3 @@ using Mono.Cecil.PE;
 
 using RVA = System.UInt32;
 
-#endif

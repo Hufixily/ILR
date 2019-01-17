@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // CryptoService.cs
 //
 // Author:
@@ -31,4 +31,3 @@ using System.IO;
 using System.Reflection;
 using System.Security.Cryptography;
 
-#endif

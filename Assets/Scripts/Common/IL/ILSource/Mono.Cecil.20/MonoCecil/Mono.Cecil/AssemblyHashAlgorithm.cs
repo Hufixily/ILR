@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // AssemblyHashAlgorithm.cs
 //
 // Author:
@@ -34,4 +34,3 @@ namespace Mono.Cecil {
 		SHA1		= 0x8004
 	}
 }
-#endif

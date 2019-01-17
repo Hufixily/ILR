@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // FieldAttributes.cs
 //
 // Author:
@@ -57,4 +57,3 @@ namespace Mono.Cecil {
 		HasFieldRVA			= 0x0100	 // Field has RVA
 	}
 }
-#endif

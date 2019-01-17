@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // ModuleKind.cs
 //
 // Author:
@@ -62,4 +62,3 @@ namespace Mono.Cecil {
 		TerminalServerAware = 0x8000,
 	}
 }
-#endif

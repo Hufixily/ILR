@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // GenericParameter.cs
 //
 // Author:
@@ -275,4 +275,3 @@ namespace Mono.Cecil {
 		}
 	}
 }
-#endif

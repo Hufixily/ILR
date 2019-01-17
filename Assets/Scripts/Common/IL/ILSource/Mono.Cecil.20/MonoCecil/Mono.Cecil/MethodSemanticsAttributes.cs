@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // MethodSemanticsattributes.cs
 //
 // Author:
@@ -41,4 +41,3 @@ namespace Mono.Cecil {
 		Fire		= 0x0020	 // Fire method for event
 	}
 }
-#endif

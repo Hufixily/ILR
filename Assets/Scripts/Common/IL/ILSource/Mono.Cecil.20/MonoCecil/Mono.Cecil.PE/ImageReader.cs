@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // ImageReader.cs
 //
 // Author:
@@ -692,4 +692,3 @@ namespace Mono.Cecil.PE
         }
     }
 }
-#endif

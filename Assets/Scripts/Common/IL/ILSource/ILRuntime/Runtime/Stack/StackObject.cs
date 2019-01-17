@@ -1,5 +1,4 @@
-﻿#if USE_HOT
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -90,11 +89,11 @@ namespace ILRuntime.Runtime.Stack
                     }
                 case ObjectTypes.StackObjectReference:
                     {
-                        return ToObject((*(StackObject**)&esp->Value), appdomain, mStack);
+                        return ToObject((ILIntepreter.ResolveReference(esp)), appdomain, mStack);
                     }
                 case ObjectTypes.ValueTypeObjectReference:
                     {
-                        StackObject* dst = *(StackObject**)&esp->Value;
+                        StackObject* dst = ILIntepreter.ResolveReference(esp);
                         IType type = appdomain.GetType(dst->Value);
                         if (type is ILType)
                         {
@@ -242,5 +241,3 @@ namespace ILRuntime.Runtime.Stack
         ArrayReference,//Value = objIdx, ValueLow = elemIdx
     }
 }
-
-#endif

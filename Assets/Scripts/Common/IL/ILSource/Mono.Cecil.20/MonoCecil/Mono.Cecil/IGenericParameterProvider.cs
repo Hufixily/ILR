@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // IGenericParameterProvider.cs
 //
 // Author:
@@ -77,4 +77,3 @@ namespace Mono.Cecil
         }
     }
 }
-#endif

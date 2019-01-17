@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // MethodImplAttributes.cs
 //
 // Author:
@@ -51,4 +51,3 @@ namespace Mono.Cecil {
 		NoInlining			= 0x0008,	// Method may not be inlined
 	}
 }
-#endif

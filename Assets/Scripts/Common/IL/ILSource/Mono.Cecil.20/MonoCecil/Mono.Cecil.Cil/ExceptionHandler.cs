@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // ExceptionHandler.cs
 //
 // Author:
@@ -87,4 +87,3 @@ namespace Mono.Cecil.Cil {
 		}
 	}
 }
-#endif

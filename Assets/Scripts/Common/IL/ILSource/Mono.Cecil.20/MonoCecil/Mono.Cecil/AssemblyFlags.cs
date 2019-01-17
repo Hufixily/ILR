@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // AssemblyFlags.cs
 //
 // Author:
@@ -40,4 +40,3 @@ namespace Mono.Cecil {
 		EnableJITCompileTracking		= 0x8000,
 	}
 }
-#endif

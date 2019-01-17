@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // IMemberDefinition.cs
 //
 // Author:
@@ -103,4 +103,3 @@ namespace Mono.Cecil
         }
     }
 }
-#endif

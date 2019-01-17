@@ -1,4 +1,4 @@
-#if USE_PDB//-----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
 //
 // Copyright (c) Microsoft. All rights reserved.
 // This code is licensed under the Microsoft Public License.
@@ -517,4 +517,3 @@ namespace Microsoft.Cci.Pdb
         //}
     }
 }
-#endif

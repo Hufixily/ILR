@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // ParameterReference.cs
 //
 // Author:
@@ -73,4 +73,3 @@ namespace Mono.Cecil {
 		public abstract ParameterDefinition Resolve ();
 	}
 }
-#endif

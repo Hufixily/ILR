@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // Document.cs
 //
 // Author:
@@ -110,4 +110,3 @@ namespace Mono.Cecil.Cil {
 		}
 	}
 }
-#endif

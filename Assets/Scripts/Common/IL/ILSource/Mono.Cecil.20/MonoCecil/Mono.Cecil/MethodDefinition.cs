@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // MethodDefinition.cs
 //
 // Author:
@@ -568,4 +568,3 @@ namespace Mono.Cecil
         }
     }
 }
-#endif

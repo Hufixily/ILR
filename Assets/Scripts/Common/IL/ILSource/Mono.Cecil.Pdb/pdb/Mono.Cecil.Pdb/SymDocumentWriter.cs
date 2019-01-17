@@ -1,4 +1,4 @@
-#if USE_PDB//
+//
 // SymDocumentWriter.cs
 //
 // Author:
@@ -27,4 +27,3 @@
 //
 
 using System;
-#endif

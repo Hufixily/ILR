@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // CodeReader.cs
 //
 // Author:
@@ -392,4 +392,3 @@ namespace Mono.Cecil.Cil
 
     }
 }
-#endif

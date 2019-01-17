@@ -1,4 +1,4 @@
-#if USE_HOTnamespace ILRuntime.Other
+﻿namespace ILRuntime.Other
 {
     /// <summary>
     /// A Class Custom Attr, It tells the CodeGenerationTools :there is a class need to generate an adaptor for ILScript
@@ -8,4 +8,3 @@
 
     }
 }
-#endif

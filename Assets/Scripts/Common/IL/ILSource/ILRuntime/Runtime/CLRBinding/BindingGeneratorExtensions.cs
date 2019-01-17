@@ -1,5 +1,4 @@
-﻿#if USE_HOT && UNITY_EDITOR
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Linq;
@@ -21,10 +20,6 @@ namespace ILRuntime.Runtime.CLRBinding
             }
             if (i.GetCustomAttributes(typeof(ObsoleteAttribute), true).Length > 0)
                 return true;
-
-            if (i.GetCustomAttributes(typeof(EditorField), true).Length > 0)
-                return true;
-
             return false;
         }
 
@@ -71,40 +66,11 @@ namespace ILRuntime.Runtime.CLRBinding
             }
             if (i.GetCustomAttributes(typeof(ObsoleteAttribute), true).Length > 0)
                 return true;
-            if (i.GetCustomAttributes(typeof(EditorField), true).Length > 0)
-                return true;
             foreach (var j in param)
             {
-                if (j.ParameterType.IsPointer || j.ParameterType == typeof(IntPtr) || j.ParameterType == typeof(System.TypedReference))
+                if (j.ParameterType.IsPointer)
                     return true;
             }
-
-            if (i is MethodInfo)
-            {
-                var returnType = ((MethodInfo)i).ReturnType;
-                if (returnType.IsPointer || returnType == typeof(IntPtr) || returnType == typeof(System.TypedReference))
-                    return true;
-            }
-
-            if (type == typeof(UnityEngine.Texture2D))
-            {
-                switch (i.Name)
-                {
-                case "get_alphaIsTransparency":
-                case "set_alphaIsTransparency":
-                    return true;
-                }
-            }
-
-            switch (i.Name)
-            {
-            case "get_runInEditMode":
-            case "set_runInEditMode":
-            case "op_UnaryPlus":
-            case "OnRebuildRequested":
-                return true;
-            }
-
             return false;
         }
 
@@ -387,18 +353,53 @@ namespace ILRuntime.Runtime.CLRBinding
                     isBox = ", true";
                 else
                     isBox = "";
-                if (!type.IsSealed && type != typeof(ILRuntime.Runtime.Intepreter.ILTypeInstance) && (domain == null || domain.CrossBindingAdaptors.ContainsKey(type)))
+                if (!type.IsSealed && type != typeof(ILRuntime.Runtime.Intepreter.ILTypeInstance))
                 {
-                    sb.Append(@"            object obj_result_of_this_method = result_of_this_method;
+                    if(domain == null || CheckAssignableToCrossBindingAdapters(domain, type))
+                    {
+                        sb.Append(@"            object obj_result_of_this_method = result_of_this_method;
             if(obj_result_of_this_method is CrossBindingAdaptorType)
             {    
                 return ILIntepreter.PushObject(__ret, __mStack, ((CrossBindingAdaptorType)obj_result_of_this_method).ILInstance");
-                    sb.Append(isBox);
-                    sb.AppendLine(@");
+                        sb.Append(isBox);
+                        sb.AppendLine(@");
             }");
+                    }
+                    else if (typeof(CrossBindingAdaptorType).IsAssignableFrom(type))
+                    {
+                        sb.AppendLine(string.Format("            return ILIntepreter.PushObject(__ret, __mStack, result_of_this_method.ILInstance{0});", isBox));
+                        return;
+                    }
+                    
                 }
                 sb.AppendLine(string.Format("            return ILIntepreter.PushObject(__ret, __mStack, result_of_this_method{0});", isBox));
             }
+        }
+
+        static bool CheckAssignableToCrossBindingAdapters(Enviorment.AppDomain domain, Type type)
+        {
+            if (type == typeof(object))
+                return true;
+            bool res = domain.CrossBindingAdaptors.ContainsKey(type);
+            if (!res)
+            {
+                var baseType = type.BaseType;
+                if (baseType != null && baseType != typeof(object))
+                {
+                    res = CheckAssignableToCrossBindingAdapters(domain, baseType);
+                }
+            }
+            if (!res)
+            {
+                var interfaces = type.GetInterfaces();
+                foreach(var i in interfaces)
+                {
+                    res = CheckAssignableToCrossBindingAdapters(domain, i);
+                    if (res)
+                        break;
+                }
+            }
+            return res;
         }
 
         internal static bool HasByRefParam(this ParameterInfo[] param)
@@ -413,5 +414,3 @@ namespace ILRuntime.Runtime.CLRBinding
         }
     }
 }
-
-#endif

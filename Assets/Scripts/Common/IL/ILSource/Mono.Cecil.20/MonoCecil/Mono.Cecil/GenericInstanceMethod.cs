@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // GenericInstanceMethod.cs
 //
 // Author:
@@ -93,4 +93,3 @@ namespace Mono.Cecil
         }
     }
 }
-#endif

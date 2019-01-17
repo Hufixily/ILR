@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // PointerType.cs
 //
 // Author:
@@ -59,4 +59,3 @@ namespace Mono.Cecil {
 		}
 	}
 }
-#endif

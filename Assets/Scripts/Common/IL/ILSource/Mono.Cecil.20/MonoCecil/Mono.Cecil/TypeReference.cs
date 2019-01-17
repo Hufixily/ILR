@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // TypeReference.cs
 //
 // Author:
@@ -376,4 +376,3 @@ namespace Mono.Cecil
         }
     }
 }
-#endif

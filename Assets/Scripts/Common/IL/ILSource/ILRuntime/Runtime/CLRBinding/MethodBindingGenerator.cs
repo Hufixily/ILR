@@ -1,5 +1,4 @@
-﻿#if USE_HOT && UNITY_EDITOR
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Linq;
@@ -505,7 +504,7 @@ namespace ILRuntime.Runtime.CLRBinding
             {
                 case ObjectTypes.StackObjectReference:
                     {
-                        var ___dst = *(StackObject**)&ptr_of_this_method->Value;");
+                        var ___dst = ILIntepreter.ResolveReference(ptr_of_this_method);");
 
                         if (pt.IsValueType && !pt.IsPrimitive && valueTypeBinders != null && valueTypeBinders.Contains(pt))
                         {
@@ -648,5 +647,3 @@ namespace ILRuntime.Runtime.CLRBinding
         }
     }
 }
-
-#endif

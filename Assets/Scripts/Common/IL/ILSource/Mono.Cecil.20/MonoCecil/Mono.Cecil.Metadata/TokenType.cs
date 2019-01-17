@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // TokenType.cs
 //
 // Author:
@@ -54,4 +54,3 @@ namespace Mono.Cecil {
 		String = 0x70000000,
 	}
 }
-#endif

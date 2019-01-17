@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // FileAttributes.cs
 //
 // Author:
@@ -33,4 +33,3 @@ namespace Mono.Cecil {
 		ContainsNoMetaData  = 0x0001,	// This is a resource file or other non-metadata-containing file
 	}
 }
-#endif

@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // IMetadataTokenProvider.cs
 //
 // Author:
@@ -33,4 +33,3 @@ namespace Mono.Cecil {
 		MetadataToken MetadataToken { get; set; }
 	}
 }
-#endif

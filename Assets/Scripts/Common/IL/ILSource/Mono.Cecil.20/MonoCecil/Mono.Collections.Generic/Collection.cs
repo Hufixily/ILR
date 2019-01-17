@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // Collection.cs
 //
 // Author:
@@ -418,4 +418,3 @@ namespace Mono.Collections.Generic {
 		}
 	}
 }
-#endif

@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // ByteBufferEqualityComparer.cs
 //
 // Author:
@@ -76,4 +76,3 @@ namespace Mono.Cecil.PE {
 		}
 	}
 }
-#endif

@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // CallSite.cs
 //
 // Author:
@@ -122,4 +122,3 @@ namespace Mono.Cecil {
 		}
 	}
 }
-#endif

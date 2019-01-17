@@ -1,4 +1,4 @@
-#if USE_PDB//
+//
 // PdbWriter.cs
 //
 // Author:
@@ -32,4 +32,3 @@ using System.Diagnostics.SymbolStore;
 
 using Mono.Cecil.Cil;
 using Mono.Collections.Generic;
-#endif

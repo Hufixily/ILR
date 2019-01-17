@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // VariableDefinition.cs
 //
 // Author:
@@ -50,4 +50,3 @@ namespace Mono.Cecil.Cil {
 		}
 	}
 }
-#endif

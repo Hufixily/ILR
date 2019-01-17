@@ -1,4 +1,4 @@
-#if USE_PDB// ISymUnmanagedDocumentWriter.cs
+// ISymUnmanagedDocumentWriter.cs
 //
 // Author:
 //   Juerg Billeter (j@bitron.ch)
@@ -26,4 +26,3 @@
 //
 
 using System.Runtime.InteropServices;
-#endif

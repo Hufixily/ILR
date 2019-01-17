@@ -1,4 +1,4 @@
-#if USE_HOTusing System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -1008,6 +1008,16 @@ namespace ILRuntime.Runtime.Intepreter
                 return false;
         }
 
+        public override bool Equals(object obj)
+        {
+            if (obj is DelegateAdapter)
+            {
+                DelegateAdapter b = (DelegateAdapter)obj;
+                return instance == b.instance && method == b.method;
+            }
+            return false;
+        }
+
         public virtual bool Equals(Delegate dele)
         {
             return Delegate == dele;
@@ -1114,4 +1124,3 @@ namespace ILRuntime.Runtime.Intepreter
         bool Equals(Delegate dele);
     }
 }
-#endif

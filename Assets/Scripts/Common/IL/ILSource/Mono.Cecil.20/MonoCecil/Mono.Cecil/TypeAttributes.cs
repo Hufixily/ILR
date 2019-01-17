@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // TypeAttributes.cs
 //
 // Author:
@@ -79,4 +79,3 @@ namespace Mono.Cecil {
 		Forwarder			= 0x00200000,   // Exported type is a type forwarder
 	}
 }
-#endif

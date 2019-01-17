@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // Section.cs
 //
 // Author:
@@ -41,4 +41,3 @@ namespace Mono.Cecil.PE {
 		public byte [] Data;
 	}
 }
-#endif

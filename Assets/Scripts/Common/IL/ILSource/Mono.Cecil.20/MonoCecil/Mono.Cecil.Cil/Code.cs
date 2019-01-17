@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // Code.cs
 //
 // Author:
@@ -250,4 +250,3 @@ namespace Mono.Cecil.Cil {
 		Readonly,
 	}
 }
-#endif

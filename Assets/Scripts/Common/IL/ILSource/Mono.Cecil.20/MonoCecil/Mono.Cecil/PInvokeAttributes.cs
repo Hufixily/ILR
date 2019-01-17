@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // PInvokeAttributes.cs
 //
 // Author:
@@ -60,4 +60,3 @@ namespace Mono.Cecil {
 		ThrowOnUnmappableCharDisabled = 0x2000,
 	}
 }
-#endif

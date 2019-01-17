@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // BaseAssemblyResolver.cs
 //
 // Author:
@@ -170,4 +170,3 @@ namespace Mono.Cecil {
 
 	}
 }
-#endif

@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // IMarshalInfoProvider.cs
 //
 // Author:
@@ -57,4 +57,3 @@ namespace Mono.Cecil
         }
     }
 }
-#endif

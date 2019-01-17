@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // ManifestResourceAttributes.cs
 //
 // Author:
@@ -37,4 +37,3 @@ namespace Mono.Cecil {
 		Private			= 0x0002	 // The resource is private to the Assembly
 	}
 }
-#endif

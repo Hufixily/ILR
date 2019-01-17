@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // ResourceType.cs
 //
 // Author:
@@ -74,4 +74,3 @@ namespace Mono.Cecil {
 		}
 	}
 }
-#endif

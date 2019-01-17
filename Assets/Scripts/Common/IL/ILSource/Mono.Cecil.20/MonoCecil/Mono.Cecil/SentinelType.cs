@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // SentinelType.cs
 //
 // Author:
@@ -51,4 +51,3 @@ namespace Mono.Cecil {
 		}
 	}
 }
-#endif

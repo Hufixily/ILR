@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // FunctionPointerType.cs
 //
 // Author:
@@ -126,4 +126,3 @@ namespace Mono.Cecil {
 		}
 	}
 }
-#endif

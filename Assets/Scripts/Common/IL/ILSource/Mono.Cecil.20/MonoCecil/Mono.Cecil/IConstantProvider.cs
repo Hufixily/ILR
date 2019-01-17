@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // IConstantProvider.cs
 //
 // Author:
@@ -55,4 +55,3 @@ namespace Mono.Cecil {
 		}
 	}
 }
-#endif

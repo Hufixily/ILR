@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // BlobHeap.cs
 //
 // Author:
@@ -59,4 +59,3 @@ namespace Mono.Cecil.Metadata
         }
     }
 }
-#endif

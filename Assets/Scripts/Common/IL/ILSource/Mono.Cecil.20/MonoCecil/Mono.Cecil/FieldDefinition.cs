@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // FieldDefinition.cs
 //
 // Author:
@@ -269,4 +269,3 @@ namespace Mono.Cecil {
 		public const int NoDataMarker = -1;
 	}
 }
-#endif

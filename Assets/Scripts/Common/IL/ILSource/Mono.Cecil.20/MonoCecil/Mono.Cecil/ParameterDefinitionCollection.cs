@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // ParameterDefinitionCollection.cs
 //
 // Author:
@@ -78,4 +78,3 @@ namespace Mono.Cecil {
 		}
 	}
 }
-#endif

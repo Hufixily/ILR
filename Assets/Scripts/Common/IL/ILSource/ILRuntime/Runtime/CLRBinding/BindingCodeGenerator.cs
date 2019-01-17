@@ -1,5 +1,4 @@
-﻿#if USE_HOT && UNITY_EDITOR
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Linq;
@@ -19,11 +18,11 @@ namespace ILRuntime.Runtime.CLRBinding
         {
             if (!System.IO.Directory.Exists(outputPath))
                 System.IO.Directory.CreateDirectory(outputPath);
-            //string[] oldFiles = System.IO.Directory.GetFiles(outputPath, "*.cs");
-            //foreach (var i in oldFiles)
-            //{
-            //    System.IO.File.Delete(i);
-            //}
+            string[] oldFiles = System.IO.Directory.GetFiles(outputPath, "*.cs");
+            foreach (var i in oldFiles)
+            {
+                System.IO.File.Delete(i);
+            }
 
             List<string> clsNames = new List<string>();
 
@@ -39,12 +38,11 @@ namespace ILRuntime.Runtime.CLRBinding
                 using (System.IO.StreamWriter sw = new System.IO.StreamWriter(outputPath + "/" + clsName + ".cs", false, new UTF8Encoding(false)))
                 {
                     StringBuilder sb = new StringBuilder();
-                    sb.Append(@"#if USE_HOT
-using System;
+                    sb.Append(@"using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Runtime.InteropServices;
-using System.Linq;
+
 using ILRuntime.CLR.TypeSystem;
 using ILRuntime.CLR.Method;
 using ILRuntime.Runtime.Enviorment;
@@ -118,7 +116,6 @@ namespace ILRuntime.Runtime.Generated
                     sb.AppendLine(ctorWraperCode);
                     sb.AppendLine("    }");
                     sb.AppendLine("}");
-                    sb.AppendLine("#endif");
 
                     sw.Write(Regex.Replace(sb.ToString(), "(?<!\r)\n", "\r\n"));
                     sw.Flush();
@@ -211,8 +208,7 @@ namespace ILRuntime.Runtime.Generated
                 using (System.IO.StreamWriter sw = new System.IO.StreamWriter(oFileName, false, new UTF8Encoding(false)))
                 {
                     StringBuilder sb = new StringBuilder();
-                    sb.Append(@"#if USE_HOT
-using System;
+                    sb.Append(@"using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -310,8 +306,7 @@ namespace ILRuntime.Runtime.Generated
             using (System.IO.StreamWriter sw = new System.IO.StreamWriter(outputPath + "/CLRBindings.cs", false, new UTF8Encoding(false)))
             {
                 StringBuilder sb = new StringBuilder();
-                sb.AppendLine(@"#if USE_HOT
-using System;
+                sb.AppendLine(@"using System;
 using System.Collections.Generic;
 using System.Reflection;
 
@@ -334,7 +329,6 @@ namespace ILRuntime.Runtime.Generated
                 sb.AppendLine(@"        }
     }
 }");
-				sb.AppendLine(@"#endif");
                 sw.Write(Regex.Replace(sb.ToString(), "(?<!\r)\n", "\r\n"));
             }
 
@@ -567,8 +561,7 @@ namespace ILRuntime.Runtime.Generated
                 using (System.IO.StreamWriter sw = new System.IO.StreamWriter(outputPath + "/" + clsName + ".cs", false, new UTF8Encoding(false)))
                 {
                     StringBuilder sb = new StringBuilder();
-                    sb.Append(@"#if USE_HOT
-using System;
+                    sb.Append(@"using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Runtime.InteropServices;
@@ -705,7 +698,6 @@ namespace ILRuntime.Runtime.Generated
                     sb.AppendLine("        }");
                     sb.AppendLine("    }");
                     sb.AppendLine("}");
-                    sb.AppendLine("#endif");
 
                     sw.Write(Regex.Replace(sb.ToString(), "(?<!\r)\n", "\r\n"));
                     sw.Flush();
@@ -723,8 +715,7 @@ namespace ILRuntime.Runtime.Generated
             using (System.IO.StreamWriter sw = new System.IO.StreamWriter(outputPath + "/CLRBindings.cs", false, new UTF8Encoding(false)))
             {
                 StringBuilder sb = new StringBuilder();
-                sb.AppendLine(@"#if USE_HOT
-using System;
+                sb.AppendLine(@"using System;
 using System.Collections.Generic;
 using System.Reflection;
 
@@ -802,12 +793,9 @@ namespace ILRuntime.Runtime.Generated
 
                 sb.AppendLine(@"    }
 }");
-                sb.AppendLine("#endif");
                 sw.Write(Regex.Replace(sb.ToString(), "(?<!\r)\n", "\r\n"));
             }
         }
 
     }
 }
-
-#endif

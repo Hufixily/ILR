@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // SequencePoint.cs
 //
 // Author:
@@ -68,4 +68,3 @@ namespace Mono.Cecil.Cil {
 		}
 	}
 }
-#endif

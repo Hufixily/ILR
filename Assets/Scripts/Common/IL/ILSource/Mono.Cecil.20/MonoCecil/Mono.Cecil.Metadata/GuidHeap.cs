@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // GuidHeap.cs
 //
 // Author:
@@ -57,4 +57,3 @@ namespace Mono.Cecil.Metadata {
 		}
 	}
 }
-#endif

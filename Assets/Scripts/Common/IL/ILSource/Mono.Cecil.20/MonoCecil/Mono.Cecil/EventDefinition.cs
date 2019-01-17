@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // EventDefinition.cs
 //
 // Author:
@@ -168,4 +168,3 @@ namespace Mono.Cecil {
 		}
 	}
 }
-#endif

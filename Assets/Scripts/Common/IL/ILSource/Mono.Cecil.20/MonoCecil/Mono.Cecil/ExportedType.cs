@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // ExportedType.cs
 //
 // Author:
@@ -247,4 +247,3 @@ namespace Mono.Cecil {
 		}
 	}
 }
-#endif

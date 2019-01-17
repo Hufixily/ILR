@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // Modifiers.cs
 //
 // Author:
@@ -135,4 +135,3 @@ namespace Mono.Cecil {
 		}
 	}
 }
-#endif

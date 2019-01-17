@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // EventReference.cs
 //
 // Author:
@@ -55,4 +55,3 @@ namespace Mono.Cecil {
 		public abstract EventDefinition Resolve ();
 	}
 }
-#endif

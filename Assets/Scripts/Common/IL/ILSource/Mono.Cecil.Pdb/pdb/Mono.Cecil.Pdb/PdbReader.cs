@@ -1,4 +1,4 @@
-#if USE_PDB//
+//
 // PdbReader.cs
 //
 // Author:
@@ -284,4 +284,3 @@ namespace Mono.Cecil.Pdb
         }
     }
 }
-#endif

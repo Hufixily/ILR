@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // ByteBuffer.cs
 //
 // Author:
@@ -182,4 +182,3 @@ namespace Mono.Cecil.PE {
 
 	}
 }
-#endif

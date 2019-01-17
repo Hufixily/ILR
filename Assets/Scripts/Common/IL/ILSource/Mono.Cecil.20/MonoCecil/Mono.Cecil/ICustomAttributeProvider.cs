@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // ICustomAttributeProvider.cs
 //
 // Author:
@@ -61,4 +61,3 @@ namespace Mono.Cecil
         }
     }
 }
-#endif

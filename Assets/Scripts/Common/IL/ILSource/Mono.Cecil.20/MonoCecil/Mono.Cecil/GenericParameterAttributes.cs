@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // GenericParameterAttributes.cs
 //
 // Author:
@@ -43,4 +43,3 @@ namespace Mono.Cecil {
 		DefaultConstructorConstraint	= 0x0010
 	}
 }
-#endif

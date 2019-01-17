@@ -1,4 +1,4 @@
-#if USE_PDB//
+//
 // SymWriter.cs
 //
 // Author:
@@ -35,4 +35,3 @@ using Mono.Cecil.Cil;
 using Mono.Collections.Generic;
 
 
-#endif

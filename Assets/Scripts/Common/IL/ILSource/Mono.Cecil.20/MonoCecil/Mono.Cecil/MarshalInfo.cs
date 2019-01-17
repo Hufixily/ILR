@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // MarshalInfo.cs
 //
 // Author:
@@ -169,4 +169,3 @@ namespace Mono.Cecil {
 		}
 	}
 }
-#endif

@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // FieldReference.cs
 //
 // Author:
@@ -81,4 +81,3 @@ namespace Mono.Cecil {
 		}
 	}
 }
-#endif

@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // TableHeapBuffer.cs
 //
 // Author:
@@ -34,4 +34,3 @@ using Mono.Cecil.PE;
 
 using RVA = System.UInt32;
 
-#endif

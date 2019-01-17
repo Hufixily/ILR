@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // ReadOnlyCollection.cs
 //
 // Author:
@@ -110,4 +110,3 @@ namespace Mono.Collections.Generic {
 		}
 	}
 }
-#endif

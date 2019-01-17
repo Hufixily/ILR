@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // OpCode.cs
 //
 // Author:
@@ -453,4 +453,3 @@ namespace Mono.Cecil.Cil {
 		}
 	}
 }
-#endif

@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // LinkedResource.cs
 //
 // Author:
@@ -58,4 +58,3 @@ namespace Mono.Cecil {
 		}
 	}
 }
-#endif

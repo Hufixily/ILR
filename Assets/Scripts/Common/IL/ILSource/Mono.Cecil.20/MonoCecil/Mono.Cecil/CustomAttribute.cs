@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // CustomAttribute.cs
 //
 // Author:
@@ -229,4 +229,3 @@ namespace Mono.Cecil {
 		}
 	}
 }
-#endif

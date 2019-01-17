@@ -1,4 +1,4 @@
-#if USE_PDBusing System;
+using System;
 using System.Collections.Generic;
 
 namespace Microsoft.Cci {
@@ -74,4 +74,4 @@ namespace Microsoft.Cci {
     /// </summary>
     string Value { get; }
   }
-}#endif
+}

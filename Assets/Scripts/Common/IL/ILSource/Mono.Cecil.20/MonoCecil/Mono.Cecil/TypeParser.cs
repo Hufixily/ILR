@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // TypeParser.cs
 //
 // Author:
@@ -582,4 +582,3 @@ namespace Mono.Cecil
         }
     }
 }
-#endif

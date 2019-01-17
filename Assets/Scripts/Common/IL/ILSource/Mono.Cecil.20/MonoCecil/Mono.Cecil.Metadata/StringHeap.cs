@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // StringHeap.cs
 //
 // Author:
@@ -79,4 +79,3 @@ namespace Mono.Cecil.Metadata {
 		}
 	}
 }
-#endif

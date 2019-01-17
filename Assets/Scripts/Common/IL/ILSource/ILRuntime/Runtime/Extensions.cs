@@ -1,4 +1,3 @@
-#if USE_HOT
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -358,5 +357,3 @@ namespace ILRuntime.Runtime
         }
     }
 }
-
-#endif

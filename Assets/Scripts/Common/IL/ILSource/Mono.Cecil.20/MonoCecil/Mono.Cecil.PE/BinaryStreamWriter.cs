@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // BinaryStreamWriter.cs
 //
 // Author:
@@ -29,4 +29,3 @@
 using System;
 using System.IO;
 
-#endif

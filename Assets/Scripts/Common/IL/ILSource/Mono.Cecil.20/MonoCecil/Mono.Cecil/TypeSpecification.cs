@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // TypeSpecification.cs
 //
 // Author:
@@ -92,4 +92,3 @@ namespace Mono.Cecil {
 		}
 	}
 }
-#endif

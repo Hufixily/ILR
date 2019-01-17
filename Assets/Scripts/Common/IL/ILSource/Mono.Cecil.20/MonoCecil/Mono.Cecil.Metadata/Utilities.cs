@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // Utilities.cs
 //
 // Author:
@@ -352,4 +352,3 @@ namespace Mono.Cecil
         }
     }
 }
-#endif

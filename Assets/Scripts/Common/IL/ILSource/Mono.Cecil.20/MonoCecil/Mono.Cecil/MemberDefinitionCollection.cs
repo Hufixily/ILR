@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // MemberDefinitionCollection.cs
 //
 // Author:
@@ -90,4 +90,3 @@ namespace Mono.Cecil {
 		}
 	}
 }
-#endif

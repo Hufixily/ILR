@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // ILProcessor.cs
 //
 // Author:
@@ -276,4 +276,3 @@ namespace Mono.Cecil.Cil {
 		}
 	}
 }
-#endif

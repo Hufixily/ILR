@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // PropertyAttributes.cs
 //
 // Author:
@@ -39,4 +39,3 @@ namespace Mono.Cecil {
 		Unused			= 0xe9ff	 // Reserved: shall be zero in a conforming implementation
 	}
 }
-#endif

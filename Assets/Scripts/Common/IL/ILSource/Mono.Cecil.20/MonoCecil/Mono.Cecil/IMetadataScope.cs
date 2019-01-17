@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // IMetadataScope.cs
 //
 // Author:
@@ -39,4 +39,3 @@ namespace Mono.Cecil {
 		string Name { get; set; }
 	}
 }
-#endif

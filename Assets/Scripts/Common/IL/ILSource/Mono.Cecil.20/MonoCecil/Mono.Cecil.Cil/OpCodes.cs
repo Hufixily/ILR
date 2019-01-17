@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // OpCodes.cs
 //
 // Author:
@@ -910,4 +910,3 @@ namespace Mono.Cecil.Cil {
 			(byte) OpCodeType.Prefix << 0 | (byte) OperandType.InlineNone << 8 | (byte) StackBehaviour.Pop0 << 16 | (byte) StackBehaviour.Push0 << 24);
 	}
 }
-#endif

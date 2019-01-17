@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // AssemblyReader.cs
 //
 // Author:
@@ -3340,4 +3340,3 @@ namespace Mono.Cecil
         }
     }
 }
-#endif

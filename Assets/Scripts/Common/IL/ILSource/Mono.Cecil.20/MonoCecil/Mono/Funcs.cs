@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // Funcs.cs
 //
 // Author:
@@ -37,4 +37,3 @@ namespace Mono {
 }
 
 #endif
-#endif

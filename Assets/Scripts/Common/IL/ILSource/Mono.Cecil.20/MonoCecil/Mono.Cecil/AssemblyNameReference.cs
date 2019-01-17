@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // AssemblyNameReference.cs
 //
 // Author:
@@ -294,4 +294,3 @@ namespace Mono.Cecil
         }
     }
 }
-#endif

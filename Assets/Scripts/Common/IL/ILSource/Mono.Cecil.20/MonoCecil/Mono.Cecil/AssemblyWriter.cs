@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // AssemblyWriter.cs
 //
 // Author:
@@ -45,4 +45,3 @@ using BlobIndex = System.UInt32;
 namespace Mono.Cecil {
 
 }
-#endif

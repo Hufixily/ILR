@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // TypeSystem.cs
 //
 // Author:
@@ -330,4 +330,3 @@ namespace Mono.Cecil
         }
     }
 }
-#endif

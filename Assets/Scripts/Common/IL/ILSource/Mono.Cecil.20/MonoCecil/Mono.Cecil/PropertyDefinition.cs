@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // PropertyDefinition.cs
 //
 // Author:
@@ -257,4 +257,3 @@ namespace Mono.Cecil {
 		}
 	}
 }
-#endif

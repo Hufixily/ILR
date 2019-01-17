@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // ArrayType.cs
 //
 // Author:
@@ -157,4 +157,3 @@ namespace Mono.Cecil {
 		}
 	}
 }
-#endif

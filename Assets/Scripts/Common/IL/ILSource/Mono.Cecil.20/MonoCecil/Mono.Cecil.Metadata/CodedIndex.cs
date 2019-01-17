@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // CodedIndex.cs
 //
 // Author:
@@ -44,4 +44,3 @@ namespace Mono.Cecil.Metadata {
 		TypeOrMethodDef
 	}
 }
-#endif

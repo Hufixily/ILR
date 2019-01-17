@@ -1,4 +1,4 @@
-#if USE_PDB//
+//
 // ISymUnmanagedWriter2.cs
 //
 // Author:
@@ -32,4 +32,3 @@ using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.ComTypes;
 
 using Mono.Cecil.Cil;
-#endif

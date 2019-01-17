@@ -1,4 +1,4 @@
-#if USE_HOT//
+//
 // MethodReturnType.cs
 //
 // Author:
@@ -109,4 +109,3 @@ namespace Mono.Cecil {
 		}
 	}
 }
-#endif
